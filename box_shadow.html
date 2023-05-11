@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        body{
+            text-align: center;
+            position: relative;
+        }
+        .box{
+            border: 3px solid black;
+            height: 500px;
+            width: 600px;
+            box-shadow: 10px 5px 5px black;
+            position: absolute;
+            display: inline;
+        }
+        .hdr{
+            height: 200px;
+            width: 200px;
+            left: 50%;
+            top: 50%;
+            border: 2px solid red;
+            margin: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            
+        }
+        .prgp{
+            height: 200px;
+            width: 200px;
+            border: 2px solid blue;
+            margin: 10px;
+            box-shadow: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="hdr">
+            <h1>This is a header</h1>
+        </div>
+        <div class="prgp">
+            <p>
+                This is a paragraph
+            </p>
+        </div>
+    </div>
+</body>
+</html>
